@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix in a Gif</title>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Link to the Bootstrap library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Link to an sdditional CSS file -->
+  <link rel="stylesheet" href="assets\css\style.css">
+  
+  <!-- Header  -->
+  <div class="jumbotron">
+    <div class="container">
+      <image class="logo img-fluid max-width: 100% height: auto" src="assets/images/Netflix_logo.jpg"></image>
+      <h2>in a Gif</h1>
+      <h3>See gifs of your favorite Netflix shows</h3>
+    </div>
+  </div>
+</head>
+
+<body>
+  
+  <!-- Buttons  -->
+  <div id="showButtons" class="container"></div>
+  
+  <!-- Main Container  -->
+  <div class="container">
+    
+    <!-- Gif Section  -->
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+      <div id="gifsView"></div>
+    </div>
+        
+    <!-- Add New Show Form  -->
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <form id="newShowForm" role="form">
+        <h2><legend>Add a new show!</legend></h2>
+        <div class="form-group">
+          <label for="show-input">Enter a show name:</label>
+          <input type="text" id="show-input">
+        </div>
+        <input id="addGif" type="submit" value="Add show" class="btn btn-danger">
+        <input id="removeGif" type="submit" value="Remove last show" class="btn btn-danger">
+      </form>    
+    </div>
+
+  </div>
+
+  <footer>
+    <div id="footer" class="container">
+      <h4 id="copyright">&copy; Copyright 2019 Fred Faour</h4>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="assets/javascript/giphy.js"></script>
+</body>
+</html>
